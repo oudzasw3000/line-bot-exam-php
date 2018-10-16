@@ -1,3 +1,4 @@
 <?php
-var_dump($_POST);
+$a = ($_POST);
+print_r($a)
 ?> 
