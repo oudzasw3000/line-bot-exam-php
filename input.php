@@ -1,4 +1,9 @@
 <?php
 $a = ($_POST);
-print_r($a['aa'])
+if $a['aa'] != null{
+  print_r($a['aa'])
+}
+else {
+  echo "oud"
+}
 ?> 
