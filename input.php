@@ -1,1 +1,3 @@
-<?php $a =($_POST) ?>
+<?php $a =($_POST) 
+  print_r($a)
+?>
