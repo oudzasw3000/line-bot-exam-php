@@ -1,3 +1,3 @@
 <?php $a =($_POST) 
-  print_r($a)
+  print_r($a);
 ?>
