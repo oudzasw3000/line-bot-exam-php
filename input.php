@@ -1,1 +1,1 @@
-<?php echo $_post['5'];?>
+<?php echo $_post['text'];?>
