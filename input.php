@@ -1,3 +1,3 @@
-<?php $a =($_POST) 
-  echo "$a" ;
+<?php $a =($_POST) ;
+echo "$a" ;
 ?>
