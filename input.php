@@ -1,6 +1,6 @@
 <?php
 $a = ($_POST);
-if (is_array($a['aa']))
+if (is_array($a){
   print_r($a['aa'])
 }
 else {
