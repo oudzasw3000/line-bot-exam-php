@@ -1,2 +1,2 @@
-<?php print_r $_POST['text'];
+<?php print_r $_POST;
 ?>
