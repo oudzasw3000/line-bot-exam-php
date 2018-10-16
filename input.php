@@ -1,9 +1,7 @@
 <?php
 $a = ($_POST);
-if (is_array($a){
-  print_r($a['aa'])
-}
-else {
-  echo "oud"
-}
+$b = ($a['aa'])
+$arr[0]["temp"]= $b";
+echo json_encode($arr);
+
 ?> 
