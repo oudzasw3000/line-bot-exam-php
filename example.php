@@ -34,10 +34,9 @@ for ($i=41;$i<=45;$i++){
 // ]
 // }';
 $output= '{
-"value": [
+"value": 
 {"temp": "a"},
 {"hum": "b"}
-]
 }';
 print_r($output);
 ?>
