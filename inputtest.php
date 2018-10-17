@@ -1,9 +1,22 @@
-<?php
-
-// read the incoming POST body (the JSON)
-$input = file_get_contents('php://input');
-
-// decode/unserialize it back into a PHP data structure
-$data = json_decode($input);
-
-// $data is now the same thing it was line 1 of your given sample code
+<?php 
+abstract class LogF{
+    static $namefile;
+    static $fp;
+    public static function setFileName($nameFile='logf'){
+        self::$namefile=   $nameFile;
+        $file_log=self::$namefile.'_'.date('Ymd').'.txt';
+        self::$fp= fopen($file_log, "a+");
+    }
+    public static function Log($text){
+        $text=chr(13).date('Y-m-d H:i').'==>'.$text;
+        fwrite(self::$fp, $text);
+    }
+    public static function closeFile(){
+        fclose(self::$fp);        
+    }
+}
+# example of use
+LogF::setFileName();
+LogF::log('primero');
+LogF::log('segundo');
+LogF::closeFile();
