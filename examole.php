@@ -5,7 +5,7 @@ header("Access-Control-Allow-Methods: GET,POST");
 header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json;charset=utf-8');
 $myfile = "value.txt" ;
-$fileHandle = fopen($myfile,'r');
+$fileHandle = fopen($myfile,'r+');
 $thedata = fread($fileHandle,100);
 //   echo($thedata);
 $a = ($thedata[1]);
