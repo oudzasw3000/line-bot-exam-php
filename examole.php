@@ -6,7 +6,7 @@ header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json;charset=utf-8');
 $myfile = "value.txt" ;
 $fileHandle = fopen($myfile,'r');
-$thedata = fread($fileHandle,12);
+$thedata = fread($fileHandle,*);
   echo($thedata);
 $output= '{
 "value": [
