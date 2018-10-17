@@ -8,9 +8,10 @@ $myfile = "value.txt" ;
 $fileHandle = fopen($myfile,'r');
 $thedata = fread($fileHandle,100);
 //   echo($thedata);
-$a = array($thedata);
+$a = ($thedata);
+$b = $a[temp]
 // $a = $thedata['temp'];
-  print_r($a);
+  print_r($b);
 // $output= '{
 // "value": [
 // {"text": "This Form OPDEV API"},
