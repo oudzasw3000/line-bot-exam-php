@@ -4,9 +4,9 @@ header("Access-Control-Allow-Headers: access");
 header("Access-Control-Allow-Methods: GET,POST");
 header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json;charset=utf-8');
-$data = file_get_contents("input.txt"); 
-$convert = explode("\n", $data); //create array separate by new line
-print_r($convert)
+$data = file_get_contents("value.txt"); 
+// $convert = explode("\n", $data); //create array separate by new line
+print_r($data)
 // $myfile = "value.txt" ;
 // $fileHandle = fopen($myfile,'r+');
 // $thedata = fread($fileHandle,100);
