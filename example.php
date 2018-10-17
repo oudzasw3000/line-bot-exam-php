@@ -33,10 +33,6 @@ for ($i=41;$i<=45;$i++){
 // {"hum": "'.$b.'"}
 // ]
 // }';
-$output= '{[
-"value": 
-{"hum": "b"}
-]
-}';
+$output= '{"value": {"hum": "b"}}';
 print_r($output);
 ?>
