@@ -1,7 +1,8 @@
 <?php
+$myfile = "value.txt"
+$fileHandle = fopen($myfile,'a')
 $a = ($_POST);
 $b = ($a['aa'])
-$arr[0]["temp"]= "$b";
-echo json_encode($arr);
-
+fwrite($fileHandle, $a)
+  fclose($fileHandle)
 ?> 
