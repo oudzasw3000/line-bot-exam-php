@@ -2,7 +2,7 @@
 abstract class LogF{
     static $namefile;
     static $fp;
-    public static function setFileName($nameFile='logf'){
+    public static function setFileName($nameFile='value'){
         self::$namefile=   $nameFile;
         $file_log=self::$namefile.'_'.date('Ymd').'.txt';
         self::$fp= fopen($file_log, "a+");
