@@ -4,8 +4,12 @@ header("Access-Control-Allow-Headers: access");
 header("Access-Control-Allow-Methods: GET,POST");
 header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json;charset=utf-8');
+$myfile = "value.txt" ;
+$fileHandle = fopen($myfile,'r');
+$thedata = fread($fileHandle,1);
+  echo($thedata);
 $output= '{
-"messages": [
+"value": [
 {"text": "This Form OPDEV API"},
 {"text": "Connection Success !"}
 ]
