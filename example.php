@@ -27,12 +27,12 @@ for ($i=41;$i<=45;$i++){
 // $b = $a['array']
 // $a = $thedata['temp'];
 //   print_r($a);
-// $output= '{
-// "value": [
-// {"temp": "'.$a.'"},
-// {"hum": "'.$b.'"}
-// ]
-// }';
+$output= '{
+"value": [
+{"temp": "'.$a.'"},
+{"hum": "'.$b.'"}
+]
+}';
 $output= '{"value": {"hum": "b"}}';
 print_r($output);
 ?>
