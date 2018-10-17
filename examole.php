@@ -7,7 +7,7 @@ header('Content-Type: application/json;charset=utf-8');
 $data = file_get_contents("value.txt"); 
 $a = ($data['temp']);
 // $convert = explode("\n", $data); //create array separate by new line
-print_r($data)
+print_r($a)
 // $myfile = "value.txt" ;
 // $fileHandle = fopen($myfile,'r+');
 // $thedata = fread($fileHandle,100);
