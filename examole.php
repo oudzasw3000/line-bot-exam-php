@@ -5,9 +5,15 @@ header("Access-Control-Allow-Methods: GET,POST");
 header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json;charset=utf-8');
 $data = file_get_contents("value.txt"); 
-$a = ($data['temp']);
+// $a = ($data['temp']);
+$i = 0 ;
+$a = "";
 // $convert = explode("\n", $data); //create array separate by new line
+for ($i=15;$i<=30;$i++){
+  $a = $a."".$data[$i]
+}
 print_r($a)
+
 // $myfile = "value.txt" ;
 // $fileHandle = fopen($myfile,'r+');
 // $thedata = fread($fileHandle,100);
