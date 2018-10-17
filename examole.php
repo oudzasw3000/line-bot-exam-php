@@ -27,11 +27,11 @@ print_r("\n".$b);
 // $b = $a['array']
 // $a = $thedata['temp'];
 //   print_r($a);
-// $output= '{
-// "value": [
-// {"text": "This Form OPDEV API"},
-// {"text": "Connection Success !"}
-// ]
-// }';
+$output= '{
+"value": [
+{"temp": "".$a},
+{"hum": "".$b}
+]
+}';
 // print_r($output);
 ?>
