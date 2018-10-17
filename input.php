@@ -1,4 +1,5 @@
 <?php
+require "value.txt" ;
 $myfile = "value.txt";
 $fileHandle = fopen($myfile,'');
 $a = ($_POST);
