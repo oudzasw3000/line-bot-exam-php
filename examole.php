@@ -7,12 +7,17 @@ header('Content-Type: application/json;charset=utf-8');
 $data = file_get_contents("value.txt"); 
 // $a = ($data['temp']);
 $i = 0 ;
-$a = "";
+$a ="";
+$b ="";
 // $convert = explode("\n", $data); //create array separate by new line
-for ($i=15;$i<=30;$i++){
+for ($i=21;$i<=25;$i++){
   $a = $a."".$data[$i];
 }
 print_r($a);
+for ($i=31;$i<=35;$i++){
+  $b = $b."".$data[$i];
+}
+print_r("\n".$b);
 
 // $myfile = "value.txt" ;
 // $fileHandle = fopen($myfile,'r+');
