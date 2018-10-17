@@ -4,6 +4,6 @@ $myfile = "value.txt";
 $fileHandle = fopen($myfile,'w')or die("can't open file");
 $a = ($_POST);
 $b = ($a['aa']);
-fwrite($fileHandle, "12");
+fwrite($fileHandle, $a);
   fclose($fileHandle);
 ?> 
