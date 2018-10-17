@@ -9,7 +9,7 @@ $fileHandle = fopen($myfile,'r');
 $thedata = fread($fileHandle,100);
 //   echo($thedata);
 $a = ($thedata);
-$b = $a[temp]
+$b = $a['temp']
 // $a = $thedata['temp'];
   print_r($b);
 // $output= '{
