@@ -10,9 +10,9 @@ $i = 0 ;
 $a = "";
 // $convert = explode("\n", $data); //create array separate by new line
 for ($i=15;$i<=30;$i++){
-  $a = $a."".$data[$i]
+  $a = $a."".$data[$i];
 }
-print_r($a)
+print_r($a);
 
 // $myfile = "value.txt" ;
 // $fileHandle = fopen($myfile,'r+');
