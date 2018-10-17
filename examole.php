@@ -7,8 +7,9 @@ header('Content-Type: application/json;charset=utf-8');
 $myfile = "value.txt" ;
 $fileHandle = fopen($myfile,'r');
 $thedata = fread($fileHandle,100);
-  echo($thedata);
-$a = $thedata['temp'];
+//   echo($thedata);
+$a = array('temp');
+// $a = $thedata['temp'];
   print_r($a);
 // $output= '{
 // "value": [
