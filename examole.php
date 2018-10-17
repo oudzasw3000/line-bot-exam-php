@@ -14,7 +14,7 @@ for ($i=21;$i<=25;$i++){
   $a = $a."".$data[$i];
 }
 print_r($a);
-for ($i=41;$i<=46;$i++){
+for ($i=41;$i<=45;$i++){
   $b = $b."".$data[$i];
 }
 print_r("\n".$b);
