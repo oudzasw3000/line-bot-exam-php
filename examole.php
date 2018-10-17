@@ -8,11 +8,11 @@ $myfile = "value.txt" ;
 $fileHandle = fopen($myfile,'r');
 $thedata = fread($fileHandle,100);
   echo($thedata);
-$output= '{
-"value": [
-{"text": "This Form OPDEV API"},
-{"text": "Connection Success !"}
-]
-}';
-print_r($output);
+// $output= '{
+// "value": [
+// {"text": "This Form OPDEV API"},
+// {"text": "Connection Success !"}
+// ]
+// }';
+// print_r($output);
 ?>
