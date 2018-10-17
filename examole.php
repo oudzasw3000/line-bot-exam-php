@@ -8,7 +8,7 @@ $myfile = "value.txt" ;
 $fileHandle = fopen($myfile,'r');
 $thedata = fread($fileHandle,100);
 //   echo($thedata);
-$a = ($thedata[hum]);
+$a = ($thedata[1]);
 // $b = $a['array']
 // $a = $thedata['temp'];
   print_r($a);
