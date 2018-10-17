@@ -13,11 +13,11 @@ $b ="";
 for ($i=21;$i<=25;$i++){
   $a = $a."".$data[$i];
 }
-print_r($a);
+// print_r($a);
 for ($i=41;$i<=45;$i++){
   $b = $b."".$data[$i];
 }
-print_r("\n".$b);
+// print_r("\n".$b);
 
 // $myfile = "value.txt" ;
 // $fileHandle = fopen($myfile,'r+');
@@ -33,5 +33,5 @@ $output= '{
 {"hum": "".$b}
 ]
 }';
-// print_r($output);
+print_r($output);
 ?>
