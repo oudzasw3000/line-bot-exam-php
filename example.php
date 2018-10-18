@@ -29,8 +29,8 @@ for ($i=41;$i<=45;$i++){
 //   print_r($a);
 $output= '{
 "value": [
-{"temp": "'.$b.'"},
-{"hum": "'.$a.'"}
+{"temp": "'.$a.'"},
+{"hum": "'.$b.'"}
 ]
 }';
 // $output= '{"value": {"hum": "b" ,"temp" : "v"}';
