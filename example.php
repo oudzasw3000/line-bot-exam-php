@@ -10,7 +10,7 @@ $i = 0 ;
 $a ="";
 $b ="";
 // $convert = explode("\n", $data); //create array separate by new line
-for ($i=21;$i<=25;$i++){
+for ($i=20;$i<=24;$i++){
   $a = $a."".$data[$i];
 }
 // print_r($a);
@@ -29,8 +29,8 @@ for ($i=41;$i<=45;$i++){
 //   print_r($a);
 $output= '{
 "value": [
-{"temp": "'.$a.'"},
-{"hum": "'.$b.'"}
+{"temp": "'.$b.'"},
+{"hum": "'.$a.'"}
 ]
 }';
 // $output= '{"value": {"hum": "b" ,"temp" : "v"}';
