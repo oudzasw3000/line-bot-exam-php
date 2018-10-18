@@ -10,7 +10,7 @@ $i = 0 ;
 $a ="";
 $b ="";
 // $convert = explode("\n", $data); //create array separate by new line
-for ($i=20;$i<=24;$i++){
+for ($i=21;$i<=25;$i++){
   $a = $a."".$data[$i];
 }
 // print_r($a);
