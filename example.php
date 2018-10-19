@@ -7,6 +7,9 @@ header('Content-Type: application/json;charset=utf-8');
 $data = file_get_contents("value.txt"); 
 $a = json_decode($data);
 print_r($data);
+print_r($a->{'hum'}); // 12345
+
+
 // $a = ($data['temp']);
 // $i = 0 ;
 // $a ="";
