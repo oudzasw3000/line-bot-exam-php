@@ -6,7 +6,8 @@ header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json;charset=utf-8');
 $data = file_get_contents("value.txt"); 
 $b = (json_encode($data));
-print_r(json_decode($b))
+$c =(json_decode($b))
+  print_r($c[0]." ".$c['hum'])
 // $a = json_decode($data);
 // print_r(json_encode($a));
 
