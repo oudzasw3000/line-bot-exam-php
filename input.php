@@ -1,7 +1,7 @@
 <?php
 require "value.txt" ;
 $myfile = "value.txt";
-$fileHandle = fopen($myfile,'r')or die("can't open file");
+$fileHandle = fopen($myfile,'r+')or die("can't open file");
 $a = ($_POST["hum"]);
 $b = ($_POST["temp"]);
 //print_r($a);
@@ -14,6 +14,6 @@ $b = ($_POST["temp"]);
 }';
 
 //fwrite($fileHandle, $a);
-fwrite($fileHandle, var_export($output, true));
+fwrite($fileHandle, print_r($output, true));
   fclose($fileHandle);
 ?> 
