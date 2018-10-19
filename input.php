@@ -6,12 +6,12 @@ $a = ($_POST["hum"]);
 $b = ($_POST["temp"]);
 //print_r($a);
 // print_r($b);
- $output= '{
-"value": [
-{"temp": "'.$b.'"},
-{"hum": "'.$a.'"}
+ $output= "{
+'value': [
+{'temp': '".$b."'},
+{'hum': '".$a."'}
 ]
-}';
+}";
 
 //fwrite($fileHandle, $a);
 fwrite($fileHandle, var_export($output, true));
