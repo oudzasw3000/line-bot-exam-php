@@ -7,7 +7,7 @@ header('Content-Type: application/json;charset=utf-8');
 $data = file_get_contents("value.txt"); 
 // $b = (json_encode($data));
 // $c =(json_decode($b));
-  print_r($data]);
+  print_r($data);
 // $a = json_decode($data);
 // print_r(json_encode($a));
 
