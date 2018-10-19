@@ -5,6 +5,6 @@ $fileHandle = fopen($myfile,'r+')or die("can't open file");
 $a = ($_POST);
 $b = ($a['aa']);
 //fwrite($fileHandle, $a);
-fwrite($fileHandle, var_export($a, true));
+fwrite($fileHandle, var_export(json_encode($a), true));
   fclose($fileHandle);
 ?> 
