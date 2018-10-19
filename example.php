@@ -18,7 +18,7 @@ print_r($a);
 // // print_r($a);
 // for ($i=41;$i<=45;$i++){
 //   $b = $b."".$data[$i];
-}
+// }
 // print_r("\n".$b);
 
 // $myfile = "value.txt" ;
