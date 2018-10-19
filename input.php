@@ -3,7 +3,7 @@ require "value.txt" ;
 $myfile = "value.txt";
 $fileHandle = fopen($myfile,'r+')or die("can't open file");
 $a = ($_POST);
-$b = ($a['hum']);
+$b = ($a[0]);
 print_r($b);
 //   $output= '{
 // "value": [
