@@ -5,17 +5,19 @@ header("Access-Control-Allow-Methods: GET,POST");
 header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json;charset=utf-8');
 $data = file_get_contents("value.txt"); 
+$a = json_decode($data);
+print_r($a);
 // $a = ($data['temp']);
-$i = 0 ;
-$a ="";
-$b ="";
-// $convert = explode("\n", $data); //create array separate by new line
-for ($i=21;$i<=25;$i++){
-  $a = $a."".$data[$i];
-}
-// print_r($a);
-for ($i=41;$i<=45;$i++){
-  $b = $b."".$data[$i];
+// $i = 0 ;
+// $a ="";
+// $b ="";
+// // $convert = explode("\n", $data); //create array separate by new line
+// for ($i=21;$i<=25;$i++){
+//   $a = $a."".$data[$i];
+// }
+// // print_r($a);
+// for ($i=41;$i<=45;$i++){
+//   $b = $b."".$data[$i];
 }
 // print_r("\n".$b);
 
@@ -27,12 +29,12 @@ for ($i=41;$i<=45;$i++){
 // $b = $a['array']
 // $a = $thedata['temp'];
 //   print_r($a);
-$output= '{
-"value": [
-{"temp": "'.$a.'"},
-{"hum": "'.$b.'"}
-]
+// $output= '{
+// "value": [
+// {"temp": "'.$a.'"},
+// {"hum": "'.$b.'"}
+// ]
 }';
 // $output= '{"value": {"hum": "b" ,"temp" : "v"}';
-print_r($output);
+// print_r($output);
 ?>
