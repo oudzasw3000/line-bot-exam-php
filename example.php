@@ -6,7 +6,7 @@ header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json;charset=utf-8');
 $data = file_get_contents("value.txt"); 
 $a = json_decode($data);
-print_r($a);
+print_r($data);
 // $a = ($data['temp']);
 // $i = 0 ;
 // $a ="";
