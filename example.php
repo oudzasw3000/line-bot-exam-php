@@ -5,7 +5,8 @@ header("Access-Control-Allow-Methods: GET,POST");
 header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json;charset=utf-8');
 $data = file_get_contents("value.txt"); 
-print_r(json_encode($data));
+$b = (json_encode($data));
+print_r(json_decode($b))
 // $a = json_decode($data);
 // print_r(json_encode($a));
 
