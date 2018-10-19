@@ -34,7 +34,7 @@ print_r($a);
 // {"temp": "'.$a.'"},
 // {"hum": "'.$b.'"}
 // ]
-}';
+// }';
 // $output= '{"value": {"hum": "b" ,"temp" : "v"}';
 // print_r($output);
 ?>
