@@ -3,8 +3,8 @@ require "value.txt" ;
 $myfile = "value.txt";
 $fileHandle = fopen($myfile,'r+')or die("can't open file");
 $a = ($_POST);
-$b = ($a[0]);
-print_r($b);
+// $b = ($a[0]);
+// print_r($b);
 //   $output= '{
 // "value": [
 // {"temp": "'.$a.'"},
@@ -13,6 +13,6 @@ print_r($b);
 // }'
 
 //fwrite($fileHandle, $a);
-fwrite($fileHandle, var_export(json_encode($a), true));
+fwrite($fileHandle, var_export($a, true));
   fclose($fileHandle);
 ?> 
